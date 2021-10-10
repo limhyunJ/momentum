@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Momentum</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=Noto+Sans+KR:wght@100;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+
+</head>
+
+<body>
+    <div id="wrap">
+        <!--<audio src="img/ost.mp3" autoplay controls></audio>-->
+        <h2 id="clock">00:00:00</h2>
+        <form id="login" class="hidden">
+           <input type="text" required maxlength="15" placeholder="What is your name?">
+           <button>login</button>
+        </form>
+        <h1 id ="greeting" class="hidden"></h1>
+        <form id="todo-form">
+            <input type="text" placeholder="write a to do and press enter" required>
+        </form>
+       
+        <div id="todoListWrap">
+            <ul id="todo-list">
+    
+            </ul>
+        </div>
+     
+    </div> 
+    <div class="bottom">
+        <div id="quote">
+            <span></span>
+            <span></span>
+        </div>
+        <div id="weather">
+            <span></span>
+            <span></span>
+        </div>
+    </div> 
+    <script src="js/login.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/quote.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/weather.js"></script>
+</body>
+
+</html>

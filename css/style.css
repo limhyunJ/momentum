@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+input {
+  width: auto;
+  outline: 0;
+  border: 0;
+  background-color: transparent;
+  padding-top: 10px;
+  border-bottom: 1px solid #fff;
+}
+
+body {
+  background-color: blanchedalmond;
+  /* font-family: 'Nanum Pen Script', cursive; */
+  font-family: "Noto Sans KR", sans-serif;
+  color: #fff;
+  overflow: hidden;
+}
+
+img {
+  width: 100vw;
+  height: 100vh;
+}
+
+.hidden {
+  display: none;
+}
+
+#wrap {
+  position: absolute;
+  top: 14%;
+  left: 10%;
+}
+#wrap #clock {
+  font-size: 20px;
+}
+
+#wrap #login input::placeholder,
+#wrap #todo-form input::placeholder {
+  color: #fff;
+  text-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+  -webkit-text-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+  -moz-text-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+}
+
+#wrap #login {
+  margin-bottom: 20px;
+}
+#wrap #login input {
+  font-size: 50px;
+  width: 70%;
+  color: #fff;
+}
+#wrap #login input::placeholder {
+  font-size: 50px;
+}
+#wrap #login button {
+  color: #fff;
+  font-size: 30px;
+  background-color: transparent;
+  border: 0;
+}
+#wrap #greeting {
+  font-size: 50px;
+}
+
+#wrap #todo-form input {
+  font-size: 25px;
+  width: 60%;
+  font-family: "Nanum Pen Script", cursive;
+}
+#wrap #todoListWrap {
+  margin-top: 20px;
+  width: 400px;
+  min-height: 300px;
+  max-height: 450px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border-radius: 13px;
+  opacity: 0.64;
+  backdrop-filter: blur(9px);
+  -webkit-backdrop-filter: blur(9px);
+  color: #333;
+  overflow-y: auto;
+}
+#wrap #todoListWrap li {
+  padding: 10px 0px 10px 12px;
+  font-family: "Nanum Pen Script", cursive;
+  font-size: 18px;
+}
+
+#todoListWrap li div {
+  width: 18px;
+  height: 18px;
+  background-image: url(../img/dot.png);
+  background-size: contain;
+  display: inline-flex;
+  align-content: middle;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+#todoListWrap li button {
+  margin-left: 10px;
+  padding: 0px 5px;
+  border: 1px solid #333;
+  border-radius: 50%;
+}
+
+#todo-list li span.active {
+  text-decoration: line-through;
+}
+.bottom {
+  position: absolute;
+  bottom: 5%;
+  left: 10%;
+  font-family: "Nanum Pen Script", cursive;
+}
+#quote {
+  font-size: 25px;
+}
+#quote span {
+  display: block;
+}
+#weather {
+  margin-top: 20px;
+  font-size: 20px;
+}
